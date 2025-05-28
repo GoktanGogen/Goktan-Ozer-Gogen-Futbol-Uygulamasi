@@ -1,0 +1,162 @@
+html, body{
+  height: 100%;  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;  
+  background-image: url("assets/stadium.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 10vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-color: rgba(0, 120, 190, 0.50);;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.25); 
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.nav-buttons a{
+    display: inline-block;
+    background-color: #007BFF;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1{
+    color: #1D1D1D;
+}
+
+.takımFormu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.formKutu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.formKutu label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formKutu input {
+    padding: 0 10px;
+    height: 50px;               
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;        
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.butonKutu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.butonKutu button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.butonKutu button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* arka planın üstüne şeffaf siyah */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.quiz-alani {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.quiz-baslik {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.takim-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.soru-kutusu {
+    margin-top: 20px;
+}
+
+.secenek {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.secenek:hover {
+    background-color: #0056b3;
+}

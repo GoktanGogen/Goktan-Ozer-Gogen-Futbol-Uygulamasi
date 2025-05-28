@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Futbol</title>
+  <link rel="stylesheet" href="style_home_page.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="nav-buttons">
+      <a href="home_page.html">Anasayfa</a>
+      <a href="hakkında_page.html">Hakkında</a>
+      <a href="kurallar_page.html">Kurallar</a>
+    </div>
+  </header>
+
+  <main id="baslık">
+    <h1>Futbol Sayfasına Hoşgeldiniz</h1>
+    <p id="bilgilendirmeMetni">
+      Aşağıda size özel tuttuğunuz takımın bir mini sınavı bulunmaktadır. Lütfen başlamak için adınızı ve tuttuğunuz takımı giriniz.
+    </p>
+
+    <div class="takımFormu">
+      <div class="formKutu">
+        <label for="isim">İsim:</label>
+        <input type="text" id="isim" name="isim" placeholder="Adınızı Giriniz" required />
+      </div>
+      <div class="formKutu">
+        <label for="takım">Tuttuğunuz Takım:</label>
+        <input type="text" id="takım" name="takım" placeholder="Tuttuğunuz Takım" required />
+      </div>
+      <div class="butonKutu">
+        <button type="submit">Quize Başla</button>
+        <button type="reset">Sıfırla!</button>
+      </div>
+    </div>
+
+    <div id="quizAlani" style="display: none;" class="quiz-alani">
+      <div class="quiz-baslik">
+        <img id="takimLogo" src="" alt="Takım Logosu" class="takim-logo" />
+        <h2><span id="kullaniciIsmi">Kullanıcı</span>, hoş geldin!</h2>
+      </div>
+      <div class="soru-kutusu">
+        <p id="soruMetni">Soru buraya gelecek</p>
+        <div id="secenekler"></div>
+        <div class="quiz-kontrol">
+          <button id="geriBtn" onclick="oncekiSoru()" style="display: none">⬅ Önceki</button>
+          <button id="ileriBtn" onclick="sonrakiSoru()" disabled>➡ Sonraki</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="quizSonuc" style="display: none;" class="quiz-sonuc">
+      <h2 id="sonucMesaji"></h2>
+      <p id="dogruYanlisSayaci"></p>
+      <button onclick="window.location.href='home_page.html'">🏠 Ana Sayfaya Dön</button>
+      <button onclick="location.reload()">🔄 Tekrar Dene</button>
+    </div>
+
+    <script src="home_page_script.js"></script>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 Futbol Tanıtım Sitesi | Tüm Hakları Saklıdır</p>
+  </footer>
+</body>
+</html>

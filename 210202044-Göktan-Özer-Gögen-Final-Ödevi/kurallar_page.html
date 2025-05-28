@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol Kuralları</title>
+    <link rel="stylesheet" href="style_kurallar.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Futbol Kuralları</h1>
+    </header>
+
+    <!-- NAVIGATION --> 
+    <nav>
+        <a href="home_page.html">Anasayfa</a>
+        <a href="hakkında_page.html">Hakkında</a>
+        <a href="kurallar_page.html">Kurallar</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2>Futbolda Temel Kurallar</h2>
+        <div class="kural-galerisi">
+            <div class="kural-karti" onclick="gosterModal(0)">
+                <img src="assets/ofsayt.webp" alt="Ofsayt">
+                <p>Ofsayt Kuralı</p>
+            </div>
+
+            <div class="kural-karti" onclick="gosterModal(1)">
+                <img src="assets/penaltı.webp" alt="Penaltı">
+                <p>Penaltı Kuralı</p>
+            </div>
+
+            <div class="kural-karti" onclick="gosterModal(2)">
+                <img src="assets/taç.jpeg" alt="Taç">
+                <p>Taç Atışı</p>
+            </div>
+
+            <div class="kural-karti" onclick="gosterModal(3)">
+                <img src="assets/korner.webp" alt="Korner">
+                <p>Korner Atışı</p>
+            </div>
+
+            <div class="kural-karti" onclick="gosterModal(4)">
+                <img src="assets/sarı_kart.webp" alt="Sarı Kart">
+                <p>Sarı Kart</p>
+            </div>
+
+            <div class="kural-karti" onclick="gosterModal(5)">
+                <img src="assets/kırmızı_kart.jpg" alt="Kırmızı Kart">
+                <p>Kırmızı Kart</p>
+            </div>
+
+            <div class="kural-karti" onclick="gosterModal(6)">
+                <img src="assets/var_sistemi.jpg" alt="Var Sistemi">
+                <p>Var Sistemi</p>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <!-- MODAL -->
+    <div id="kuralModal" class="modal">
+        <div class="modal-icerik">
+            <span class="kapat" onclick="kapatModal()">&times;</span>
+            <img id="modalResim" src="" alt="Kural Resmi">
+            <h2 id="modalBaslik">Kural Başlığı</h2>
+            <p id="modalAciklama">Detaylı açıklama buraya gelecek.</p>
+            <iframe id="modalVideo" width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2025 Futbol Tanıtım Sitesi | Tüm Hakları Saklıdır
+    </footer>
+
+    <script src="kurallar_scrip.js"></script>
+</body>
+</html>
